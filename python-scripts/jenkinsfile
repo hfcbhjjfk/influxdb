@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git url: 'https://github.com/hfcbhjjfk/influxdb.git', branch: 'main'
+            }
+        }
+        stage('Run Monitoring Script') {
+            steps {
+                sh 'python3 scripts/monitor_servers.py'
+            }
+        }
+    }
+    triggers {
+        cron('H/5 * * * *')  // Run every 5 minutes
+    }
+}
+
