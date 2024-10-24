@@ -50,9 +50,9 @@ def monitor_server(ip, instance_id, private_key):
 
 # Monitor all servers
 servers = [
-    {"ip": "3.145.161.116", "id": "server1", "key": "C:\Users\gopic\Downloads\ohio_keypair.ppk"},
-    {"ip": "3.12.85.37", "id": "server2", "key": "C:\Users\gopic\Downloads\ohio_keypair.ppk"},
-    {"ip": "18.220.173.32", "id": "server2", "key": "C:\Users\gopic\Downloads\ohio_keypair.ppk"},
+    {"ip": "3.145.161.116", "id": "server1", "key": r"C:\Users\gopic\Downloads\ohio_keypair.ppk"},
+    {"ip": "3.12.85.37", "id": "server2", "key": r"C:\Users\gopic\Downloads\ohio_keypair.ppk"},
+    {"ip": "18.220.173.32", "id": "server2", "key": r"C:\Users\gopic\Downloads\ohio_keypair.ppk"},
 ]
 
 for server in servers:
